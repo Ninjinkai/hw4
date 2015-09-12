@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Javascript Compound Interest Calculator</title>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    
+    <body>
+        
+<!--  Explain what the page does.  -->
+        <header>
+            <div class="container">
+                <h1>Calculate the compound interest earned on a loan or investment.</h1>
+            </div>
+        </header>
+        
+        <main>
+<!--  Get values and run calculation.  -->
+            <div class="container">
+                <p>
+                    <input type="number" id="principle" value="0">Principle</input>
+                </p>
+                <p>
+                    <input type="number" id="intRate" value="0">Interest Rate</input>
+                </p>
+                <p>
+                    <input type="number" id="period" value="0">Period</input>
+                </p>
+                <p>
+                    <input class="btn btn-primary" type="button" id="calculate" value="Calculate" />
+                </p>
+            </div>
+<!--  Output result.  -->
+            <div class="container">
+                <p id="result">Total: </p>
+                <script src="js/calculator.js"></script>
+            </div>
+        </main>
+
+    </body>
+</html>
