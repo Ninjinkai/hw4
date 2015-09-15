@@ -16,26 +16,44 @@
         </header>
         
         <main>
+<!--  About compound interest.  -->
+            <div class="container well">
+                <aside class="col-md-4">
+                    <p>Compound interest is the most powerful force in the universe.</p>
+                </aside>
+                
 <!--  Get values and run calculation.  -->
-            <div class="container">
-                <p>
-                    <input type="number" id="principle" value="0">Principle</input>
-                </p>
-                <p>
-                    <input type="number" id="intRate" value="0">Interest Rate</input>
-                </p>
-                <p>
-                    <input type="number" id="period" value="0">Period</input>
-                </p>
-                <p>
-                    <input class="btn btn-primary" type="button" id="calculate" value="Calculate" />
-                </p>
-            </div>
+                <article class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control" placeholder="Principle" id="principle">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Interest Rate" id="intRate">
+                        <span class="input-group-addon" id="basic-addon2">%</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Period" id="period">
+                        <span class="input-group-addon" id="basic-addon2">cycles</span>
+                    </div>
+                    <p>
+                        <input class="btn btn-primary" type="button" id="calculate" value="Calculate" />
+                    </p>
 <!--  Output result.  -->
-            <div class="container">
-                <p id="result">Total: </p>
-                <script src="js/calculator.js"></script>
+                    <div class="container">
+                        <p id="result">Total: </p>
+                        <script src="js/calculator.js"></script>
+                    </div>
+                </article>
             </div>
+            
+<!--  Fun Futurama trivia  -->
+            <article>
+                <div class="container">
+                    <h2>Trivia!</h2>
+                    <p>In the TV show Futurama, one of the main characters had a bank account that had been earning compound interest for one thousand years.  He started with $0.93 and earned 2.25% interest over a period of 1000 cycles.  Find out how much money he had when he checked the account.</p>
+                </div>
+            </article>
         </main>
 
     </body>
