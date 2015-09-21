@@ -1,32 +1,61 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>Javascript Compound Interest Calculator</title>
-        <link rel="stylesheet" href="css/bootstrap.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Nick Petty COP3813 homework 4 compound interest calculator">
+        <meta name="author" content="Nick Petty">
+        <link rel="icon" href="icons/favicon.ico">
+
+        <title>JS Compound Interest</title>
+
+<!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+        <link href="css/jumbotron.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     
     <body>
         
-<!--  Explain what the page does.  -->
-        <header>
+<!-- Navigation bar. -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://lamp.cse.fau.edu/~npetty2014/index.html">Nick Petty's Web Portfolio</a>
+                </div>
+            </div>
+        </nav>
+
+<!-- Jumbotron for the page description. -->
+        <header class="jumbotron">
             <div class="container">
                 <h1>Compound Interest Calculator</h1>
             </div>
         </header>
         
-        <main>
+        <main class="container">
+
 <!--  About compound interest.  -->
-            <div class="container well">
-                <aside class="col-md-4">
-                    <p>Compound interest is the most powerful force in the universe.</p>
+            <div class="row">
+                <aside class="col-md-4 add_padding">
+                    <p>Loans and deposits earn interest, and that interest is added onto the principal to earn more interest.  Over each period, the amount of interest earned increases.  This is <em>compound interest</em>.</p>
+                    <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Compound_interest" role="button">Wikipedia</a>
                 </aside>
                 
 <!--  Get values and run calculation.  -->
                 <article class="col-md-8">
                     <div class="input-group">
                         <span class="input-group-addon">$</span>
-                        <input type="text" class="form-control" placeholder="Principle" id="principle">
+                        <input type="text" class="form-control" placeholder="Principal" id="principal">
                     </div>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Interest Rate" id="intRate">
@@ -49,12 +78,28 @@
             
 <!--  Fun Futurama trivia  -->
             <article>
-                <div class="container">
+                <div>
                     <h2>Trivia!</h2>
-                    <p>In the TV show Futurama, one of the main characters had a bank account that had been earning compound interest for one thousand years.  He started with $0.93 and earned 2.25% interest over a period of 1000 cycles.  How much money did he have when he checked the account?</p>
+                    <p>In the TV show Futurama, Fry (the main character) had a bank account that had been earning compound interest for one thousand years.  He started with a principal of $0.93 and earned 2.25% interest over a period of 1000 cycles.  How much money did he have when he checked the account?</p>
                 </div>
             </article>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Nick Petty 2015</p>
+                <p>Built using elements from <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+                <p>Favicon provided by <a href="http://www.favicon-generator.org/">Favicon & App Icon Generator</a>.</p>
+            </footer>
+
         </main>
 
     </body>
+
+<!-- Bootstrap core JavaScript ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
 </html>
