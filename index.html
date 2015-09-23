@@ -23,9 +23,9 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    
+
     <body>
-        
+
 <!-- Navigation bar. -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -41,7 +41,7 @@
                 <h1>Compound Interest Calculator</h1>
             </div>
         </header>
-        
+
         <main class="container">
 
 <!--  About compound interest.  -->
@@ -50,20 +50,20 @@
                     <p>Loans and deposits earn interest, and that interest is added onto the principal to earn more interest.  Over each period, the amount of interest earned increases.  This is <em>compound interest</em>.</p>
                     <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Compound_interest" role="button">Wikipedia</a>
                 </aside>
-                
+
 <!--  Get values and run calculation.  -->
-                <article class="col-md-8">
+                <div class="col-md-8">
                     <div class="input-group">
                         <span class="input-group-addon">$</span>
                         <input type="text" class="form-control" placeholder="Principal" id="principal">
                     </div>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Interest Rate" id="intRate">
-                        <span class="input-group-addon" id="basic-addon2">%</span>
+                        <span class="input-group-addon">%</span>
                     </div>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Period" id="period">
-                        <span class="input-group-addon" id="basic-addon2">cycles</span>
+                        <span class="input-group-addon">cycles</span>
                     </div>
                     <p>
                         <input class="btn btn-primary" type="button" id="calculate" value="Calculate" />
@@ -73,9 +73,9 @@
                         <p id="result">Total: </p>
                         <script src="js/calculator.js"></script>
                     </div>
-                </article>
+                </div>
             </div>
-            
+
 <!--  Fun Futurama trivia  -->
             <article>
                 <div>

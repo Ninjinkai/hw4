@@ -10,9 +10,20 @@ var result = function (principal, intRate, period) {
     document.getElementById("result").innerHTML = "Total: $" + principal.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 };
 
+//Inform users that their inputs are not acceptable.
+var invalid = function () {
+    'use strict';
+    document.getElementById("result").innerHTML = "All inputs must be numbers.";
+};
+
 //Get values from fields and run calculate function when button is clicked.
 document.getElementById("calculate").onclick = function () {
     'use strict';
     var principal = document.getElementById("principal").value, intRate = document.getElementById("intRate").value, period = document.getElementById("period").value;
-    result(principal, intRate, period);
+//Check if inputs can be used for calculation.
+    if (isNaN(principal) || isNaN(intRate) || isNaN(period)) {
+        invalid();
+    } else {
+        result(principal, intRate, period);
+    }
 };
